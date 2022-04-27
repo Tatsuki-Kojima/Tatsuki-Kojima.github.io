@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0F0F0;
+}
+
+#wrapper {
+    width: auto;
+    max-width: 1600px;
+    margin: 0 auto 0 auto;
+    padding: 0 0 45px 0;
+    background-color: #FDFEFF;
+    /*border-top: 1px solid #0096FF;*/
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* TOP Contains */
+
+.top-container {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+}
+
+.top-image-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.top-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* opacity 透明度 [ 透明 0 <--> 1 非透明 ] */
+    /*opacity: 1;
+    transition: opacity 1.2s cubic-bezier(0.5, 1, 0.89, 1);*/
+}
+
+.top-title {
+    text-align: center;
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: clamp(45px, 30vw, 60px);
+}
+
+
+/* Introduction contains */
+
+.front-intro-comp {}
+
+.intro-comp-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.intro-component {
+    display: block;
+    background-color: #e3f6ff;
+    margin: 12px 15px 12px 15px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.intro-component-large {
+    width: 60vw;
+    max-width: 800px;
+}
+
+.intro-component-small {
+    border: 1px;
+    width: 40%;
+    height: 100%;
+}
+
+.intro-mypic-container {
+    width: clamp(50%, 80vw, 65%);
+}
+
+.intro-mypicture {
+    width: 100%;
+}
+
+.front-intro-box-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.front-intro-box {
+    margin: 10px;
+    padding: 5px;
+    width: 25%;
+    text-align: center;
+}
+
+.intro-container-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.intro-comp-title {
+    text-align: center;
+    font-size: clamp(24px, 100%, 30px);
+    font-weight: bold;
+}
+
+.intro-comp-text {
+    text-align: center;
+    font-size: clamp(18px, 100%, 28px);
+}
+
+.intro-comp-text-ruby {
+    text-align: center;
+    font-size: clamp(12px, 100%, 18px);
+}
+
+.intro-comp-image-container {
+    text-align: center;
+    width: 100%;
+}
+
+.intro-comp-image {
+    width: 25vw;
+    max-width: 60%;
+}
+
+.intro-comp-bottom-right-logo-img-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.intro-comp-bottom-right-logo-img {
+    width: 25%;
+}
+
+footer {
+    margin-top: 120px;
+}
