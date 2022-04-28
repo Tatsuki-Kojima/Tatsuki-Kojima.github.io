@@ -84,6 +84,7 @@ a {
     border: 1px;
     width: 40%;
     height: 100%;
+    position: relative;
 }
 
 .intro-mypic-container {
@@ -140,12 +141,54 @@ a {
 }
 
 .intro-comp-bottom-right-logo-img-container {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
     display: flex;
     flex-direction: row-reverse;
 }
 
 .intro-comp-bottom-right-logo-img {
     width: 25%;
+}
+
+
+/* see more button */
+
+.seemore-button-box {
+    margin: 5px 5px 5px 0px;
+    height: 30%;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: center;
+}
+
+.seemore-button:hover {
+    background: #ccd8ff;
+}
+
+.seemore-button {
+    margin: 5px;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    /* 縦に対して、中央揃えを行う　で検索して出てきたもの
+    display: table-cell;
+    vertical-align: middle;
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.764);
+    border: 2px solid rgb(114, 114, 218);
+    border-radius: 5px;
+    background: transparent;
+    transition: background-color 1s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.seemore-button::before {
+    content: "";
 }
 
 footer {
